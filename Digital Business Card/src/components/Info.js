@@ -6,7 +6,7 @@ import LinkedIn from "../images/linkedin.png";
 export default function Info() {
   return (
     <header>
-      <img src={PersonalImage} className="info--avatar" alt="No Avatar" />
+      <img src={PersonalImage} className="info--avatar" />
       <h1 className="info--title">Istrate Mihai</h1>
       <p className="info--p1">Frontend Developer</p>
       <p className="info--p2">istratemihai.website</p>
@@ -15,11 +15,7 @@ export default function Info() {
         Email
       </button>
       <button className="info--btn2">
-        <img
-          src={LinkedIn}
-          alt="No LinkedIn Photo"
-          className="info--linkedin"
-        />
+        <img src={LinkedIn} className="info--linkedin" />
         LinkedIn
       </button>
     </header>

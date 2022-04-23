@@ -12,12 +12,6 @@ export default function FormField(props) {
   });
   return (
     <div className="form--input--area">
-      <input
-        id={props.id}
-        className="form-control input-request"
-        type="text"
-        placeholder="Enter value"
-      />
       <select className="form-select input-request">{currencies}</select>
     </div>
   );

@@ -6,12 +6,21 @@ export default function Calculator() {
     <div className="calculator container">
       <form className="form--calculator">
         <div className="mb-3">
-          <label htmlFor="value1">Convert</label>
-          <FormField id="value1" />
+          <label htmlFor="value1">Enter value:</label>
+          <input
+            id="value1"
+            className="form-control input-request"
+            type="text"
+            placeholder="Enter value"
+          />
         </div>
         <div className="mb-3">
-          <label htmlFor="value2">To</label>
-          <FormField id="value2" />
+          <label>Convert from</label>
+          <FormField />
+        </div>
+        <div className="mb-3">
+          <label>To</label>
+          <FormField />
         </div>
         <div className="mb-3">
           <button className="btn btn-primary">Calculate</button>

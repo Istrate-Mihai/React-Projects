@@ -1,18 +1,24 @@
 import React from "react";
-import Currencies from "../Currencies.js";
 
 export default function FormField(props) {
-  const currencies = Currencies.map((currency, index) => {
+  const currencies = props.currencies.map((currency, index) => {
     return (
       <option
         key={index}
-        value={currency.symbol}
+        value={currency.name}
       >{`${currency.name} ${currency.symbol}`}</option>
     );
   });
   return (
     <div className="form--input--area">
-      <select className="form-select input-request">{currencies}</select>
+      <select
+        className="form-select input-request"
+        id={props.id}
+        name={props.name}
+        onChange={(event) => props.handleChange(event)}
+      >
+        {currencies}
+      </select>
     </div>
   );
 }
